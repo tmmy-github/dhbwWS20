@@ -4,7 +4,7 @@ import Zutaten_fürs_Rezept from './Zutaten_fürs_Rezept';
 import axios from "axios"
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Stepper from "./Stepper"
+import Switch from "./Switch"
 
 export default class RezeptAnsicht extends Component {
 
@@ -66,7 +66,7 @@ export default class RezeptAnsicht extends Component {
                         <Zutaten_fürs_Rezept recipe = {this.state.recipe[0]}/>
                 </Grid>
                 <Grid>
-                     <Stepper recipe= {this.state.recipe[0]}/>
+                     <Switch recipe= {this.state.recipe[0]}/>
                 </Grid>
             </Grid>
         )
