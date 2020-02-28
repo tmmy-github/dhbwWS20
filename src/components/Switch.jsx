@@ -1,13 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Switch from '@material-ui/core/Switch';
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+import StepLabel from '@material-ui/core/StepLabel';
 import StepContent from '@material-ui/core/StepContent';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Step from '@material-ui/core/Step';
-import StepLabel from '@material-ui/core/StepLabel';
-
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function VerticalLinearSwitch(props) {
+export default function VerticalLinearStepper(props) {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
 
@@ -65,7 +64,7 @@ export default function VerticalLinearSwitch(props) {
 
   return (
     <div className={classes.root}>
-      <Switch activeStep={activeStep} orientation="vertical">
+      <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((label, index) => (
           <Step key={label}>
             <StepLabel>{label}</StepLabel>
@@ -78,7 +77,7 @@ export default function VerticalLinearSwitch(props) {
                     onClick={handleBack}
                     className={classes.button}
                   >
-                    Zurück
+                    go back
                   </Button>
                   <Button
                     variant="contained"
@@ -86,17 +85,17 @@ export default function VerticalLinearSwitch(props) {
                     onClick={handleNext}
                     className={classes.button}
                   >
-                    {activeStep === steps.length - 1 ? 'Finish' : 'Weiter'}
+                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                   </Button>
                 </div>
               </div>
             </StepContent>
           </Step>
         ))}
-      </Switch>
+      </Stepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
-          <Typography>Your Cocktail is ready!</Typography>
+          <Typography>Your Cocktail is ready to drink! Have Fun!</Typography>
           <Button onClick={handleReset} className={classes.button}>
             again
           </Button>
