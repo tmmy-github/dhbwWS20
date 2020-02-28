@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-import Zutatenliste from "./Zutatenliste"
+import Liste from "./Liste"
 import Button from '@material-ui/core/Button';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -53,7 +53,7 @@ export default function Zutateneingabe(props) {
             </Grid>
             
         </Grid>
-        <Zutatenliste ingredients={props.ingredients} deleteIngredients = {props.deleteIngredients}/>
+        <Liste ingredients={props.ingredients} deleteIngredients = {props.deleteIngredients}/>
     </React.Fragment>
     )
 }
