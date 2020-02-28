@@ -1,0 +1,43 @@
+.App_Bar{
+    margin-top: 1%;
+}
+
+.oblique {
+    font-style: oblique;
+    font-family:courier,arial,helvetica;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color:#FFEB3B;
+    background-color: #3f51b5;
+}
+
+.oblique2 {
+    font-style: oblique;
+    font-family:courier,arial,helvetica;
+    text-align: center;
+    color:#FFEB3B;
+    background-color: #3f51b5;
+}
+
+
+
+.add{
+    margin-top: 1%;
+}
+
+.icon{
+    text-align: center;
+    margin-bottom: 1%;
+    color:#FFEB3B;
+}
+.background{
+    background-image: url(./cocktail5.jpg);
+    width: 1535px;
+    height: 580px;
+  }
+
+.Ü{
+    text-align: center;
+
+}

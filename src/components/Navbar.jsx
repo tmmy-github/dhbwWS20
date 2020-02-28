@@ -1,5 +1,4 @@
 import React from 'react'
-import "../App.css"
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
@@ -22,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     },
   }));
 
-export default function App_Bar_Navigation({props}) {
+export default function Navigation({props}) {
     const classes = useStyles();
 
     return (
@@ -40,7 +39,7 @@ export default function App_Bar_Navigation({props}) {
                     </IconButton>
                 </Grid>
                 <Grid>
-                <Button variant="outlined" color="primary" aria-label="delete" component={Link} to={'/Rezeptübersicht'}>
+                <Button variant="outlined" color="primary" aria-label="delete" component={Link} to={'/Übersicht_Rezepte'}>
                     Reciep
                 </Button>
                 </Grid>

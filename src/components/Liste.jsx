@@ -9,6 +9,6 @@ export default function Liste(props) {
                     <Zutat deleteIngredient = {props.deleteIngredients} ingredient={ingredient}/>
                 )
             })}
-        </div>
+            </div>
     )
 }
