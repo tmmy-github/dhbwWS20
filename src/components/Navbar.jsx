@@ -40,7 +40,7 @@ export default function Navigation({props}) {
                 </Grid>
                 <Grid>
                 <Button variant="outlined" color="primary" aria-label="delete" component={Link} to={'/Übersicht_Rezepte'}>
-                    Reciep
+                    Recipe
                 </Button>
                 </Grid>
                 <Grid>
