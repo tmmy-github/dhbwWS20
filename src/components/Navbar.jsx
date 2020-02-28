@@ -28,7 +28,7 @@ export default function App_Bar_Navigation({props}) {
     return (
         <div class="App_Bar">
             <div className={classes.root} class="icon">
-                   <LocalBarIcon color="#FFEB3B" style={{ fontSize: 80 }}/>
+                   <LocalBarIcon color="#FFEB3B" style={{ fontSize: 75 }}/>
                  </div>
             <Grid container
                 direction="row"
@@ -40,9 +40,9 @@ export default function App_Bar_Navigation({props}) {
                     </IconButton>
                 </Grid>
                 <Grid>
-                    <Button variant="outlined" color="primary" aria-label="delete" component={Link} to={'/Rezeptübersicht'}>
-                         Reciep
-                    </Button>
+                <Button variant="outlined" color="primary" aria-label="delete" component={Link} to={'/Rezeptübersicht'}>
+                    Reciep
+                </Button>
                 </Grid>
                 <Grid>
                 <div className={classes.root}>
@@ -55,7 +55,7 @@ export default function App_Bar_Navigation({props}) {
                     />
                 <label htmlFor="contained-button-file">
                      <Button variant="contained" color="primary" component="span">
-                        Share your results
+                        Share results
                     </Button>
                  </label>
                  </div>
