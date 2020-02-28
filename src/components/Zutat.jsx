@@ -12,6 +12,7 @@ export default function Liste(props) {
     return (
         <FormGroup>
           <FormControlLabel
+          
               control={<Checkbox checked={false} onChange={handleChange}/>}
               label={props.ingredient}
           />

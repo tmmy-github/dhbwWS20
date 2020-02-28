@@ -16,7 +16,7 @@ const styles = {
       default: "#F6CECE"
     }),
     color: 'black',
-    height: 48,
+    height: 45,
   },
 };
 
