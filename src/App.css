@@ -33,11 +33,17 @@
 }
 .background{
     background-image: url(./cocktail5.jpg);
-    width: 1535px;
-    height: 580px;
+    width: 100%;
+    height: 1000px;
   }
 
 .Ü{
     text-align: center;
 
+}
+
+.Rezeptuebersicht{
+    padding: 20%;
+    text-align: end;
+    white-space: initial;
 }
