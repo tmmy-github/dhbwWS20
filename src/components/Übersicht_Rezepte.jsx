@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Rezept from './Rezept';
 import Grid from '@material-ui/core/Grid';
 import axios from "axios"
-
 import "../App.css"
 
 export default class Übersicht extends Component {
@@ -16,14 +15,11 @@ export default class Übersicht extends Component {
         }
     }
 
-    
     componentDidMount(){
         this.getDatabaseUpdate()
         this.state.shopping = this.props.shopping
         console.log("Domponent did mount")
     }
-
-    
 
     setRecipes(){
         this.state.download.map(recipe => {
@@ -103,7 +99,6 @@ export default class Übersicht extends Component {
         )
     }
     
-
     render() {
         return(
             
