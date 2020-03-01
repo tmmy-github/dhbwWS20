@@ -38,6 +38,7 @@ export default function Rezept(props) {
     
   if (!props.shopping){
     if (props.recipe.matchingRate ===1){
+
         return (
             <React.Fragment>
                 <StyledButton color={color}  ><Link href={"/Rezept/"+props.recipe.name}>{props.recipe.name}</Link></StyledButton>
@@ -45,6 +46,7 @@ export default function Rezept(props) {
             </React.Fragment>
           );
     }
+
     else{
         return(
             <div>
@@ -56,7 +58,9 @@ export default function Rezept(props) {
   else{
     return (
         <React.Fragment>
-          <div class="oblique2">choose:</div>
+          <div class="oblique2">
+            choose:
+          </div>
             <StyledButton color={color}  ><Link href={"/Rezept/"+props.recipe.name}>{props.recipe.name}</Link></StyledButton>
             <Divider/>
         </React.Fragment>

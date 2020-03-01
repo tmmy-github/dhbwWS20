@@ -31,7 +31,11 @@ export default function Zutateneingabe(props) {
 
     return (
     <React.Fragment>
-        <div> <h1> <p class="oblique">The.Cocktail.App</p></h1></div>
+        <div> 
+            <h1> 
+                <p class="oblique">The.Cocktail.App</p>
+            </h1>
+        </div>
         <Grid container
         direction="column"
         justify="center"
@@ -53,7 +57,9 @@ export default function Zutateneingabe(props) {
             </Grid>
             
         </Grid>
-        <Liste ingredients={props.ingredients} deleteIngredients = {props.deleteIngredients}/>
+        <Liste 
+            ingredients={props.ingredients} deleteIngredients = {props.deleteIngredients}
+        />
     </React.Fragment>
     )
 }

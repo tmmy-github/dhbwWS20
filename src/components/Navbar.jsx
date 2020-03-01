@@ -1,14 +1,11 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import LocalBarIcon from '@material-ui/icons/LocalBar';
 import IconButton from '@material-ui/core/IconButton';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
-import ListIcon from '@material-ui/icons/List';
-import { makeStyles } from '@material-ui/core/styles';
-import LocalBarIcon from '@material-ui/icons/LocalBar';
-
-
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -26,9 +23,9 @@ export default function Navigation({props}) {
 
     return (
         <div class="App_Bar">
-            <div className={classes.root} class="icon">
-                   <LocalBarIcon color="#FFEB3B" style={{ fontSize: 75 }}/>
-                 </div>
+                <div className={classes.root} class="icon">
+                    <LocalBarIcon color="#FFEB3B" style={{ fontSize: 70 }}/>
+                    </div>
             <Grid container
                 direction="row"
                 justify="center"

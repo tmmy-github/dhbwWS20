@@ -37,6 +37,7 @@ export default class RezeptAnsicht extends Component {
         this.forceUpdate()
     }
     getDatabaseUpdate(){
+        
         axios.get("https://dhbwws20.firebaseio.com/recipes.json").then(
         response =>   {
             const fetchedOrders = [];
