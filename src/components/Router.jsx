@@ -7,8 +7,6 @@ import Übersicht from './Übersicht_Rezepte';
 import RezeptAnsicht from './Rezepte';
 import App_Bar_Navigation from "./Navbar"
 
-
-
 const LOCAL_STORAGE_KEY ="cocktailapp.ingredients"
 const LOCAL_STORAGE_SHOPPING = "cocktailapp.shopping"
 
