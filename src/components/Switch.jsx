@@ -8,6 +8,9 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
+{/*Using Material UI code for this*/}
+
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
@@ -22,6 +25,13 @@ const useStyles = makeStyles(theme => ({
   resetContainer: {
     padding: theme.spacing(3),
   },
+  completed: {
+  display: 'inline-block',
+  },
+  instructions: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+},
 }));
 
 export default function VerticalLinearStepper(props) {
@@ -92,17 +102,19 @@ export default function VerticalLinearStepper(props) {
             </StepContent>
           </Step>
         ))}
+
       </Stepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
           <Typography>Your Cocktail is ready to drink! Have Fun!</Typography>
           <Button onClick={handleReset} className={classes.button}>
-            again
+              again
           </Button>
         </Paper>
       )}
     </div>
   );
+
   }
   else{
     return(

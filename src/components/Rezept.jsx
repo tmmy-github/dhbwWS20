@@ -7,7 +7,6 @@ import "../App.css"
 
 
 const styledBy = (property, mapping) => props => mapping[props[property]];
-
 const styles = {
   root: {
     background: styledBy('color', {
@@ -23,6 +22,8 @@ const styles = {
 const StyledButton = withStyles(styles)(({ classes, color, ...other }) => (
   <Button className={classes.root} {...other} />
 ));
+
+{/*Setting colors for matchin rate*/}
 
 export default function Rezept(props) {
   var color = "default"
@@ -57,7 +58,9 @@ export default function Rezept(props) {
   }
   else{
     return (
+      
         <React.Fragment>
+          {/*Mapping all possable Cocktails*/}
           <div class="oblique2">
             choose:
           </div>

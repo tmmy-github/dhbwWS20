@@ -19,6 +19,9 @@ export default class RezeptAnsicht extends Component {
     componentDidMount(){
         this.getDatabaseUpdate()
     }
+
+    //*downloading ingredients for recipe*
+
     engineerDonwload(){
         this.state.download.map(item => {
             const ingredients = item.ingredients.split(",")
@@ -59,11 +62,13 @@ export default class RezeptAnsicht extends Component {
                 justify="center"
                 alignItems="center">
                 <Grid>
+                    {/*Name of Cocktail*/}
                     <h2>
                         {this.state.recipe_name}
                     </h2>
                 </Grid>
                 <Grid>
+                    {/*showing all needed ingredients*/}
                         <Zutaten_fürs_Rezept recipe = {this.state.recipe[0]}/>
                 </Grid>
                 <Grid>

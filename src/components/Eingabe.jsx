@@ -8,8 +8,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import "../App.css"
 
-
-
+//creating Zutateneingabe with props with const for setting Values for ingredients
 
 export default function Zutateneingabe(props) {
 
@@ -20,6 +19,8 @@ export default function Zutateneingabe(props) {
     const handleChange = prop => event => {
         setValues({ ...values, [prop]: event.target.value})
       };
+
+//if the input of ingredients equals nothing, the value updates ""
 
     function handleAddElement(){
         if (values.ingredients === "") return
@@ -33,7 +34,8 @@ export default function Zutateneingabe(props) {
     <React.Fragment>
         <div> 
             <h1> 
-                <p class="oblique">The.Cocktail.App</p>
+                {/* This is the Top-Title for the application */}
+                <p class="oblique">The.Cocktail.App</p> 
             </h1>
         </div>
         <Grid container
@@ -41,13 +43,16 @@ export default function Zutateneingabe(props) {
         justify="center"
         alignItems="center">
             <Grid >
+                {/* implementing the text input field for ingredients */}
                 <TextField value={values.ingredients} onChange={handleChange("ingredients")} label="add some Ingredients ..." variant="outlined" />
             </Grid>
             <Grid class="add">
+                {/* Add Button */}
                 <Button color="primary" onClick={handleAddElement} variant="contained">Add</Button>
             </Grid>
             <Grid >
                 <FormGroup>
+                    {/*Checkbox for shopping*/}
                     <FormControlLabel
                         control={<Checkbox color="primary" checked={props.shopping} onChange={props.handleChangeShopping}/>}
                         label="click me to include shopping"

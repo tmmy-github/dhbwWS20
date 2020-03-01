@@ -3,6 +3,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import Checkbox from '@material-ui/core/Checkbox';
 
+{/*Checkbox implementation*/}
+
+
 export default function Liste(props) {
 
     const handleChange = event => {
